@@ -1,0 +1,49 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #fff;
+}
+
+#container {
+    width: 100%;
+    align-items: center;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+}
+
+header img {
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+nav {
+    padding: 1% auto;
+    border: #fff;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    margin: 0;
+}
+
+h1 {
+    size: 1.5em;
+}
+
+footer {
+    margin: 10% auto;
+}
