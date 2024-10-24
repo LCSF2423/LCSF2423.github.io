@@ -97,7 +97,7 @@ main div {
     text-align: center;
 }
 
-#reasons h2 {
+.reasons_heading {
     margin-top: 5%;
 }
 
@@ -140,12 +140,22 @@ footer p a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px),
-print {}
+print {
+    #reasons div {
+        width: 40%;
+        margin: 6% 2%;
+    }
+}
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
     #container {
         width: 1920px;
         margin: 0 auto;
+    }
+
+    #reasons div {
+        width: 29%;
+        margin: 1% 2%;
     }
 }

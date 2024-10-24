@@ -95,6 +95,10 @@ main div img {
     margin-left: 5%;
 }
 
+.tel-line {
+    margin-top: 5%;
+}
+
 .tel-line a {
     font-size: 1.5em;
     color: #fff;
@@ -103,6 +107,11 @@ main div img {
     border-radius: 8px;
     margin: 0 auto;
     font-weight: bold;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 5%;
 }
 
 .special-reasons div {
@@ -155,7 +164,11 @@ footer p a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px), print {
-    
+    .special-reasons div {
+        width: 40%;
+        text-align: left;
+        margin: 3% 2%;
+    }
 }
 
 /* Media Query for Large Desktop Viewports */
@@ -163,5 +176,11 @@ footer p a {
     #container {
         width: 1920px;
         margin: 0 auto;
+    }
+
+    .special-reasons div {
+        width: 29%;
+        text-align: left;
+        margin: 6% 2%;
     }
 }
