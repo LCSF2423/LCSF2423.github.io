@@ -1,12 +1,26 @@
 /* CSS Reset */
-body, container, header, nav, main, footer, h1, div, nav, nav ul, h4, img {
+body,
+container,
+header,
+nav,
+main,
+footer,
+h1,
+h2,
+h3,
+div,
+nav,
+ul,
+h4,
+img {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 /* Style rules for body and images */
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -56,6 +70,10 @@ nav a {
     color: #fff;
 }
 
+nav a:active {
+    background-color: #fff;
+}
+
 main {
     display: block;
     margin: 2em 2em;
@@ -68,73 +86,40 @@ main div {
     width: 100%;
 }
 
-.intro-title {
-    width:  100%;
-    top: 9%;
-    color: #000;
-    font-size: 2em;
-    font-family: "Francois One", sans-serif;
+#history {
+    text-align: left;
 }
 
-main div img {
-    width: 100%;
+#history h2 {
+    background-color: #87CEEB;
+    border-radius: 30px;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+#reasons h2 {
+    margin-top: 5%;
+}
+
+#reasons div {
+    margin-top: 10%;
+}
+
+#reasons div img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
     height: auto;
 }
 
-.intro-desc {
-    font-size: 1.5em;
-    color: #fff;
-    background-color:#87CEEB;
-    border-radius: 8px;
-    padding: 3% 2%;
-    margin: 0 auto;
-}
-
-#promotion h4 {
+#reasons div h3,
+ul {
     text-align: left;
+    margin-top: 2%;
+}
+
+#reasons li {
     margin-left: 5%;
-}
-
-.tel-line a {
-    font-size: 1.5em;
-    color: #fff;
-    background-color: #87CEEB;
-    padding: 2% 5%;
-    border-radius: 8px;
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-.special-reasons div {
-    text-align: left;
-    margin-top: 3%;
-}
-
-.special-reasons h4 {
-    margin-top: 0;
-    padding: 1% 0;
-}
-
-.special-reasons p {
-    margin-top: 0.5%;
-    margin-left: 5%;
-}
-
-.mission h4 {
-    color: #fff;
-    font-size: 1.2em;
-    background-color: #87CEEB;
-    border-radius: 50px;
-    margin-top: 3%;
-    padding: 1% 1%;
-}
-.mission_span {
-    color: #87CEEB;
-    font-size: 1.3em;
-}
-
-.tablet-desktop {
-    display: none;
 }
 
 footer {
@@ -154,9 +139,8 @@ footer p a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
-    
-}
+@media screen and (min-width: 630px),
+print {}
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
