@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.audio-section h2, .video-section h2 {
+    background-color: #87CEEB;
+    padding: 1%;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.video-section {
+    margin-top: 3%;
+}

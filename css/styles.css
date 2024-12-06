@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, container, header, nav, main, footer, h1, div, nav, nav ul, h4, img {
+body, container, header, nav, main, footer, h1, div, nav, nav ul, h4, img, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,9 +15,17 @@ body {
 }
 
 /* Style rules for mobile device */
+.tab-desk, #menu-links {
+    display: none;
+}
+
+#company_name {
+    width: 100px;
+    height: 100px;
+    stroke-width: 50%;
+}
+
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #87CEEB;
     padding-top: 0.8%;
@@ -25,14 +33,40 @@ header {
     padding-left: 5%;
 }
 
-header p {
-    color: #fff;
-    font-size: 1.5em;
-    font-family: "Francois One", sans-serif;
+#company_name{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.img-banner {
+    width: 100%;
 }
 
 nav {
     background-color: #87CEEB;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-icon {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    padding: 2%;
+    display: block;
+}
+
+.mobile-nav .menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 nav ul {
@@ -169,6 +203,26 @@ footer p a {
         text-align: left;
         margin: 3% 2%;
     }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .tab-desk {
+        display: block;
+    }
+
+    nav li {
+        border-bottom: solid 0.5px #fff;
+        font-size: 1.2em;
+        padding: 0.8em 0.1em;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0 2em;
+    }
 }
 
 /* Media Query for Large Desktop Viewports */
@@ -182,5 +236,9 @@ footer p a {
         width: 29%;
         text-align: left;
         margin: 6% 2%;
+    }
+
+    .tab-desk {
+        display: inline;
     }
 }

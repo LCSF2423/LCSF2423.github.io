@@ -6,6 +6,7 @@
     <title>WashWise</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/dishwasher_4.jpg" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
@@ -14,15 +15,35 @@
 <body>
 
     <div id="container">
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a> </li>
+                    <li><a href="team.html">Our Team</a> </li>
+                    <li><a href="specials.html">Specials</a> </li>
+                    <li><a href="training.html">Training</a> </li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
         <!-- Use the header area for the website name or logo -->
         <header>
-            <p>WashWise</p>
+            <a href="index.html"><img id="company_name" src="images/banner.jpg" alt="banner"></a>
         </header>
 
+        <img class="img-banner" src="images/big_banner.jpg" alt="WashWise">
+        
         <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
+        <nav class="tab-desk">
             <ul>
-
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a> </li>
                 <li><a href="team.html">Our Team</a> </li>
@@ -48,7 +69,7 @@
                 <div id="promotion">
                     <h3>Limited Time Offer: Get 20% Off All Dishwashers!</h3>
                     <p>Call us today to Get Started: </p>
-                    <p class="tel-line"><a href="tel:+1(528)666 6666">+1(528)666 6666</a></p>
+                    <p class="tel-line"><a href="tel:+1(528)6666666">+1(528)666 6666</a></p>
                 </div>
             </div>
 
@@ -58,11 +79,12 @@
         <!-- Use the footer area to add webpage footer content -->
         <footer>
             <p>&copy; Copyright 2099. All Rights Reserved.</p>
-            <p><a href="emailto: 1135280911@qq.com">Request information </a></p>
+            <p><a href="mailto:1135280911@qq.com">Request information </a></p>
             <p>Lianlian Shen &nbsp;&nbsp; c0945951</p>
         </footer>
     </div>
 
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
