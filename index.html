@@ -1,90 +1,335 @@
 <!DOCTYPE html>
-<!-- created by: Lianlian Shen. c0945951 -->
 <html lang="en">
 
 <head>
-    <title>WashWise</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/dishwasher_4.jpg" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/colors-flat.css">
+  <!-- <link rel="stylesheet" href="font-awesome.min.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <title>Liana</title>
 </head>
 
 <body>
-
-    <div id="container">
-        <!-- Mobile Nav -->
-        <nav class="mobile-nav">
-            <div id="menu-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a> </li>
-                    <li><a href="team.html">Our Team</a> </li>
-                    <li><a href="specials.html">Specials</a> </li>
-                    <li><a href="training.html">Training</a> </li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <a class="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-        </nav>
-
-        <!-- Use the header area for the website name or logo -->
-        <header>
-            <a href="index.html"><img id="company_name" src="images/banner.jpg" alt="banner"></a>
-        </header>
-
-        <img class="img-banner" src="images/big_banner.jpg" alt="WashWise">
-        
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav class="tab-desk">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a> </li>
-                <li><a href="team.html">Our Team</a> </li>
-                <li><a href="specials.html">Specials</a> </li>
-                <li><a href="training.html">Training</a> </li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-
-            </ul>
-        </nav>
-
-        <!-- Use the main area to add the main content of the webpage -->
-        <main>
-            <div class="mobile">
-                <div id="intro">
-                    <p class="intro-title">Dishwashers For Every Need</p>
-                    <img src="images/dishwasher_homepage.jpeg" alt="Dishwashers For Every Need">
-                    <p class="intro-desc">Experience effortless cleaning with our advanced dishwasher, saving you time
-                        and ensuring sparkling results every time!</p>
-                </div>
-
-                <div id="promotion">
-                    <h3>Limited Time Offer: Get 20% Off All Dishwashers!</h3>
-                    <p>Call us today to Get Started: </p>
-                    <p class="tel-line"><a href="tel:+1(528)6666666">+1(528)666 6666</a></p>
-                </div>
-            </div>
-
-        </main>
+  <header class="header" id="top">
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large ">Liana Shen</a>
+        <span class="w3-right">
 
 
-        <!-- Use the footer area to add webpage footer content -->
-        <footer>
-            <p>&copy; Copyright 2099. All Rights Reserved.</p>
-            <p><a href="mailto:1135280911@qq.com">Request information </a></p>
-            <p>Lianlian Shen &nbsp;&nbsp; c0945951</p>
-        </footer>
+          <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hello</a>
+          <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resume</a>
+          <a href="#new-arrivals" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
+          <!-- <a href="#testimony" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Testimony</a> -->
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+        </span>
+      </div>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+      <a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gallery</a>
+      <a href="#new-arrivals" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">New Arrivals</a>
+      <!-- <a href="#testimony" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Testimony</a> -->
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+    </div>
+  </header>
+  <main>
+    <div class="hero-section w3-animate-left " id="home" >
+      <div class="hero-section-main">
+        <div class="hero-section-into-text w3-margin-top">
+          <h1 class="w3-text-white">Liana Shen</h1>
+          <p class="w3-right w3-text-white w3-small w3-hide-small hero-qoute ">
+            Web developer, Full Stack Developer, Automated Testing
+            <br><br>
+
+            Great ideas & execution 💪
+          </p>
+
+          <div class="w3-text-white l " style="margin-top:60px">
+            <p>Follow us on LinkedIn</p>
+            <div class="w3-margin-top">
+
+
+              <!-- <a href="#">  <i class="fa fa-facebook-official w3-hover-opacity icons" ></i></a> 
+              <a href="#"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
+              <a href="#"><i class="fa fa-snapchat w3-hover-opacity icons"></i></a>  
+              <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons" ></i></a>  
+              <a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>   -->
+              <a href="https://www.linkedin.com/in/lianlianshen/"><i
+                  class="fa fa-linkedin w3-hover-opacity icons"></i></a>
+            </div>
+          </div>
+          <a href="#new-arrivals" class="">
+            <button class="w3-text-white w3-small w3-round w3-red w3-btn w3-margin-top">My Projects
+
+            </button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </main>
+  <section>
+    <div class="products" id="gallery">
+
+      <div class="w3-container ">
+        <h2 class="section-text-header">my projects</h2>
+      </div>
+      
+    </div>
+
+  </section>
+  <div class="new-arrived-products" id="new-arrivals">
+
+    <div class="new-product ">
+      <div class="new-arrived-image">
+        <img src="images/concentration_game.jpg"
+          alt="milada-vigerova" />
+      </div>
+      <div class="my-projects-text" style="overflow: hidden; padding:0px 20px;">
+        <h4 style="text-overflow:ellipsis ;overflow: hidden;;">Concentration Game</h4>
+        <!-- <p class="w3-small">8 items in store</p>
+        <p class="w3-small">gray | white | black</p>
+        <p class="price">$12.00</p> -->
+      </div>
+    </div>
+
+    <div class="new-product">
+      <div class="new-arrived-image">
+        <img src="images/concentration_game.jpg"
+          alt="cristofer-maximilian" />
+      </div>
+      <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+        <h4 style="text-overflow:ellipsis ;overflow: hidden;">Concentration Game</h4>
+        <!-- <p class="w3-small">10 items in store10 items in store10 items in store10 items in store10 items in store</p> -->
+        <!-- <p class="w3-small">gray | yellow | black</p>
+        <p class="price">$23.00</p> -->
+      </div>
+    </div>
+
+    <div class="new-product">
+      <div class="new-arrived-image">
+        <img src="images/concentration_game.jpg"
+          alt="gez-xavier-mansfield" />
+      </div>
+      <div class="w3-margin-top" style="overflow: hidden;  padding:0px 20px;">
+        <h4>Concentration Game</h4>
+        <!-- <p>6 items in store</p>
+        <p class="w3-small">gray | blue-black</p>
+        <p class="price">$10.00</p> -->
+      </div>
+    </div>
+
+    <div class="new-product">
+      <div class="new-arrived-image">
+        <img src="images/concentration_game.jpg"
+          alt="wander-fleur" />
+      </div>
+      <div class="w3-margin-top" style="overflow: hidden;  padding:0px 20px;">
+        <h4>Concentration Game</h4>
+        <!-- <p class="w3-small">2 items in store</p>
+        <p class="w3-small">white | black</p>
+        <p class="price">$16.00</p> -->
+      </div>
+    </div>
+
+    <!-- <div class="new-product">
+      <div class="new-arrived-image">
+        <img src="https://spaces.w3schools.com/images/signature-june-v5jTUTeuc1c-unsplash-removebg-preview.png"
+          alt="signature-june" />
+      </div>
+      <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+        <h4>kiya Fashion</h4>
+        <p class="w3-small">5 items store </p>
+        <p class="w3-small">Red | black</p>
+        <p class="price">$24.00</p>
+      </div>
+    </div> -->
+<!--     
+    <div class="new-product">
+      <div class="new-arrived-image">
+        <img src="https://spaces.w3schools.com/images/kemal-alkan-_BDBEP0ePQc-unsplash-removebg-preview.png"
+          alt="kemal-alkan" />
+      </div>
+      <div class="w3-margin-top" style="overflow: hidden;  padding:0px 20px;">
+        <h4>kiya Fashion</h4>
+        <p class="w3-small">4 items in store</p>
+        <p class="w3-small">Red | yellow | black</p>
+        <p class="price">$15.00</p>
+      </div>
+    </div> -->
+
+  </div>
+  <!-- new-arrived-products" -->
+  <div class="products" id="new-arrivals">
+
+    <div class="w3-container ">
+      <h2 class="section-text-header">my hobbies</h2>
+    </div>
+    
+  </div>
+  <div class="w3-row product-list">
+    <div class="w3-col m9 l6 product-left-side w3-animate-left">
+      <p style="position: absolute;padding: 18px;">Hiking</p>
+      <img src="images/Hiking.JPG"
+        alt="pedram-normohamadian" />
+    </div>
+    <div class="w3-col m9 l5 product-right-side">
+      <div class="product-right-side-1">
+        <p style="position: absolute;padding: 20px;">Skiing</p>
+        <img src="images/Skiing.JPG"
+          alt="ussama-azam" />
+      </div>
+      <div class="product-right-side-2">
+        <p style="position: absolute; padding: 20px;">Camping</p>
+        <img
+          src="images/Camping.JPG"
+          alt="kindred-hues" />
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Customer Feedback-->
+  <!-- <div class="w3-light-gray" style="margin-top: 40px; padding: 50px 0px;" id="testimony">
+    <div class="feedback">
+      <div class="w3-container ">
+        <h2 class="section-text-header" style="margin-top: 0px !important;">Customer FeedBack</h2>
+      </div>
+      <div class="Customer-feedback" style="display: flex;justify-content: space-evenly;flex-wrap: wrap;">
+        <div class="card">
+          <div class="customer-feedback-header">
+            <div class="customer-profile">
+              <img src="https://spaces.w3schools.com/images/1B22UBPK1Pw.jpg" alt="Photo by Behrouz Sasani | Unsplash" />
+            </div>
+            <div>
+              <p class="name">Sara Mak</p>
+
+            </div>
+          </div>
+          <div>
+            <p class="w3-small">"Your items were a huge success!"</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="customer-feedback-header">
+            <div class="customer-profile">
+              <img src="https://spaces.w3schools.com/images/zHHtOf92CC4.jpg"
+                alt="Photo by Roman Holoschchuk | Unsplash" />
+            </div>
+            <div>
+              <p class="name">Christina Bredema</p>
+
+            </div>
+          </div>
+          <div>
+            <p class="w3-small">"Thank you for your gracious hospitality hosting the W.H.A.T. Group! "</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="customer-feedback-header">
+            <div class="customer-profile">
+              <img src="https://spaces.w3schools.com/images/cdksyTqEXzo.jpg" alt="Photo by Robert Godwin | Unsplash" />
+            </div>
+            <div>
+              <p class="name">John Daniel</p>
+
+            </div>
+          </div>
+          <div>
+            <p class="w3-small">"With Gratitude...for making this world & my life better!"</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="customer-feedback-header">
+            <div class="customer-profile">
+              <img src="https://spaces.w3schools.com/images/quPVqsLmhTg.jpg"
+                alt="Photo by Florencia Simonini | Unsplash" />
+            </div>
+            <div>
+              <p class="name">Lydia Kante</p>
+
+            </div>
+          </div>
+          <div>
+            <p class="w3-small">"I LOVE THE SHIRTS, they are probably the best dress/casual shirts I have ever had."</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div> -->
+
+  <br>
+  <div class="w3-center contact" id="contact" >
+    <div class=" w3-left-align w3-margin-top contact-info ">
+       <!-- <h3 style="font-weight: 800;" class="contact-head">GET IN TOUCH</h3>  -->
+       <h4 style="font-weight: 600;">Feel free to talk to me :)
+       </h4>
+       <!-- <p>We care about our customers<br>you can contact us for any feedback</p>
+       <h4 style="font-weight: 600;">Follow Us </h4> -->
+       
+     <!-- <i class="fa fa-facebook-official w3-hover-opacity icons"  ></i>
+     <i class="fa fa-instagram w3-hover-opacity icons" ></i>
+     <i class="fa fa-snapchat w3-hover-opacity icons"></i>
+     <i class="fa fa-pinterest-p w3-hover-opacity icons" ></i>
+     <i class="fa fa-twitter w3-hover-opacity icons"></i> -->
+     <a href="https://www.linkedin.com/in/lianlianshen/"><i
+      class="fa fa-linkedin w3-hover-opacity icons"></i></a>
+    </div>
+    <div class="w3-left-align w3-margin-top contact-info" >
+          <h3 style="font-weight: 600;">My Info</h3>
+             <!-- <p>Mon - Sat 7am - 9pm:</p>
+             <p>Opening on Morning | Off at afternoon</p>
+             <p>Delivery only on opening hours</p> -->
+             <br>
+             <div class="w3-margin-to  w3-left-align" >
+              <!-- <h4 style="font-weight: 600;">CONTACT INFO</h4> -->
+              <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 20px;"></i> 548-386-6666</p>
+              <label><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i>  lianaofsg@gmail.com</label>
+             <!-- <input placeholder="Email" class="w3-margin-top" type="email"/> -->
+             <br>
+             <br>
+             <button class="w3-button w3-red w3-round " style="margin-left: 30px;">Welcome</button>
+    
+           </div>     
+                 
+    </div>
+    
+    
+  </div>
+
+
+  <div class="w3-flat-midnight-blue w3-padding w3 w3-center w3-margin-top">
+    <p>Thank you for visiting my website :)</p>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 </body>
 
 </html>
